@@ -3,620 +3,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Vaz | Senior Business Analyst & Eels Die-Hard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>~*~JoRdAn VaZ~*~ WeLcOmE 2 My HoMePaGe!!! ★★★</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Comic Sans MS - the font of the gods -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
 </head>
 <body>
-    <!-- Floating Sports Ball Background -->
-    <div class="floating-balls" id="floatingBalls"></div>
+    <!-- Cursor Trail Container -->
+    <div id="cursorTrail"></div>
     
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">JV<span class="eels-flash">⚡</span></a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#sports" class="nav-link">Sports</a></li>
-                <li><a href="#adventures" class="nav-link">Adventures</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Under Construction Banner -->
+    <div class="under-construction">
+        <img src="https://web.archive.org/web/20091027063044im_/http://geocities.com/SouthBeach/Marina/4942/construction.gif" alt="Under Construction" onerror="this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            ★★★ WELCOME TO MY AWESOME HOMEPAGE!!! ★★★ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 ★★★ SIGN MY GUESTBOOK!!! ★★★ YOU ARE VISITOR #<span id="visitorCount">000000</span> ★★★
+        </marquee>
+        <img src="https://web.archive.org/web/20091027063044im_/http://geocities.com/SouthBeach/Marina/4942/construction.gif" alt="Under Construction" onerror="this.src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'">
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-subtitle">G'day, I'm</p>
-                <h1 class="hero-title">Jordan Vaz</h1>
-                <div class="hero-tagline">
-                    <span class="typewriter" id="typewriter"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    Senior Business Analyst by day. Parramatta Eels tragic by... well, also by day because we keep losing. 
-                    Based in Brisbane, but my heart bleeds blue and gold. 🔵🟡
-                </p>
-                <div class="hero-cta">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#sports" class="btn btn-secondary">Talk Footy</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat" data-count="9">
-                        <span class="stat-number">0</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat" data-count="37">
-                        <span class="stat-number">0</span>
-                        <span class="stat-label">Years Since Eels Won</span>
-                    </div>
-                    <div class="stat" data-count="75">
-                        <span class="stat-number">0</span>
-                        <span class="stat-label">Countries Visited</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-container">
-                    <img src="images/jordan.jpeg" alt="Jordan Vaz" class="profile-img">
-                    <div class="image-decoration"></div>
-                    <div class="eels-badge">
-                        <span>⚡</span>
-                        <span>PARRA</span>
-                    </div>
-                </div>
-            </div>
+    <!-- Annoying MIDI Player Notice -->
+    <div class="midi-player" id="midiPlayer">
+        <div class="midi-content">
+            <span class="blink">♪♫♪</span> NOW PLAYING: crazy_frog_remix.mid <span class="blink">♪♫♪</span>
+            <button onclick="this.parentElement.parentElement.style.display='none'">STOP THE MUSIC!</button>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll Down</span>
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-accent">Who's This</span>
-                <span class="title-main">Legend?</span>
-            </h2>
+    <!-- Main Content Container with Frames Look -->
+    <div class="main-wrapper">
+        <!-- Sidebar with Links -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3><img src="https://web.archive.org/web/20091026203553im_/http://www.geocities.com/SouthBeach/Cove/8838/new.gif" alt="NEW!" onerror="this.style.display='none'"> COOL LINKS</h3>
+                <ul class="link-list">
+                    <li><a href="#about" class="rainbow-link">★ About Me</a></li>
+                    <li><a href="#guestbook" class="rainbow-link">★ Sign Guestbook</a></li>
+                    <li><a href="#photos" class="rainbow-link">★ My Photos</a></li>
+                    <li><a href="#webrings" class="rainbow-link">★ Web Rings</a></li>
+                    <li><a href="#awards" class="rainbow-link">★ Awards I Won</a></li>
+                </ul>
+            </div>
             
-            <div class="about-content">
-                <div class="about-card main-card">
-                    <div class="card-icon">🏏</div>
-                    <h3>The Short Version</h3>
-                    <p>
-                        I'm a Senior Business Analyst who traded Sydney's traffic for Brisbane's humidity. 
-                        When I'm not optimising business processes or building reports, you'll find me 
-                        screaming at the TV during Origin (go the Blues!), playing social soccer, 
-                        or planning my next adventure abroad.
-                    </p>
-                    <p>
-                        Yes, I support the Eels. No, I don't want to talk about the premiership drought. 
-                        Actually, scratch that – I <em>always</em> want to talk about it. It builds character.
-                    </p>
-                </div>
-                
-                <div class="about-grid">
-                    <div class="about-card">
-                        <div class="card-icon">🎓</div>
-                        <h3>Education</h3>
-                        <p><strong>Macquarie University</strong></p>
-                        <p>Bachelor of Applied Finance & Bachelor of Commerce</p>
-                        <p class="card-meta">2012 - 2015</p>
-                        <p><strong>CPA Australia</strong></p>
-                        <p>CPA Program</p>
-                        <p class="card-meta">2020 - 2026</p>
+            <div class="sidebar-section">
+                <h3>MY BUDDIES</h3>
+                <div class="buddy-list">
+                    <div class="buddy online">
+                        <span class="status-dot"></span>
+                        xX_DarkAngel_Xx
                     </div>
+                    <div class="buddy online">
+                        <span class="status-dot"></span>
+                        ~*SuNsHiNe*~
+                    </div>
+                    <div class="buddy away">
+                        <span class="status-dot"></span>
+                        sk8erboi2003
+                    </div>
+                    <div class="buddy offline">
+                        <span class="status-dot"></span>
+                        CoolDude99
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>VOTE 4 ME!</h3>
+                <div class="vote-buttons">
+                    <button class="vote-btn" onclick="alert('Thanks for voting! You are #' + Math.floor(Math.random()*9999) + ' to vote!')">
+                        👍 COOL SITE
+                    </button>
+                    <button class="vote-btn" onclick="alert('WHY?! 😭')">
+                        👎 NOT COOL
+                    </button>
+                </div>
+                <p class="vote-count">Current Rating: ★★★★★ (5/5)</p>
+            </div>
+
+            <!-- Animated GIF Collection -->
+            <div class="sidebar-section gif-collection">
+                <img src="https://web.archive.org/web/20091026235841im_/http://geocities.com/SouthBeach/Marina/4942/email.gif" alt="Email me!" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2288%22 height=%2231%22><text y=%2220%22 font-size=%2212%22>📧 EMAIL ME!</text></svg>'">
+                <img src="https://web.archive.org/web/20091026203553im_/http://www.geocities.com/SouthBeach/Cove/8838/fire.gif" alt="Fire!" onerror="this.textContent='🔥'">
+                <img src="https://web.archive.org/web/20091026203553im_/http://www.geocities.com/SouthBeach/Cove/8838/cool.gif" alt="Cool!" onerror="this.textContent='😎'">
+            </div>
+
+            <!-- Hit Counter -->
+            <div class="hit-counter">
+                <p>You are visitor:</p>
+                <div class="counter-display" id="hitCounter">
+                    <span>0</span><span>4</span><span>2</span><span>0</span><span>6</span><span>9</span>
+                </div>
+                <p class="counter-since">Since Jan 1, 2000</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-border">
+                    <h1 class="main-title">
+                        <span class="blink">★</span>
+                        ~*~WeLcOmE tO jOrDaN's HoMePaGe~*~
+                        <span class="blink">★</span>
+                    </h1>
+                    <div class="hero-image-container">
+                        <img src="images/jordan.jpeg" alt="Jordan Vaz" class="profile-photo">
+                        <div class="photo-sparkles"></div>
+                    </div>
+                    <marquee class="hero-marquee" behavior="alternate" scrollamount="3">
+                        <span class="rainbow-text">★ Senior Business Analyst ★ Eels Fan 4 Life ★ Brisbane Local ★ World Traveller ★</span>
+                    </marquee>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section class="content-section" id="about">
+                <h2 class="section-title">
+                    <img src="https://web.archive.org/web/20091026203553im_/http://www.geocities.com/SouthBeach/Cove/8838/star.gif" alt="star" onerror="this.textContent='⭐'">
+                    aBouT mE!!!
+                    <img src="https://web.archive.org/web/20091026203553im_/http://www.geocities.com/SouthBeach/Cove/8838/star.gif" alt="star" onerror="this.textContent='⭐'">
+                </h2>
+                <div class="about-content">
+                    <table class="info-table" border="3" cellpadding="10" cellspacing="0" bgcolor="#ffff00">
+                        <tr>
+                            <td><strong>Name:</strong></td>
+                            <td>Jordan Vaz (but u can call me J-Dawg 😎)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Age:</strong></td>
+                            <td>Old enough 2 party! 🎉</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Location:</strong></td>
+                            <td>Brisbane, Australia 🇦🇺</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Occupation:</strong></td>
+                            <td>Senior Business Analyst (fancy right?!)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fav Team:</strong></td>
+                            <td><span class="blink">⚡ PARRAMATTA EELS 4EVA!!! ⚡</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Status:</strong></td>
+                            <td>Single and ready 2 mingle! jk lol 😂</td>
+                        </tr>
+                    </table>
                     
-                    <div class="about-card">
-                        <div class="card-icon">🏆</div>
-                        <h3>Achievements</h3>
-                        <ul class="achievement-list">
-                            <li>Duke of Edinburgh - Gold, Silver & Bronze</li>
-                            <li>Agile Project Management Certified</li>
-                            <li>Survived 37+ years of Eels heartbreak</li>
-                            <li>Can name every Eels player since 1986</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="about-card">
-                        <div class="card-icon">💪</div>
-                        <h3>Skills</h3>
-                        <div class="skills-container">
-                            <div class="skill-item" data-skill="95">
-                                <span class="skill-name">Reporting & Analysis</span>
-                                <div class="skill-bar"><div class="skill-fill"></div></div>
-                            </div>
-                            <div class="skill-item" data-skill="90">
-                                <span class="skill-name">Business Process Improvement</span>
-                                <div class="skill-bar"><div class="skill-fill"></div></div>
-                            </div>
-                            <div class="skill-item" data-skill="85">
-                                <span class="skill-name">Stakeholder Management</span>
-                                <div class="skill-bar"><div class="skill-fill"></div></div>
-                            </div>
-                            <div class="skill-item" data-skill="100">
-                                <span class="skill-name">Eels Trivia Knowledge</span>
-                                <div class="skill-bar"><div class="skill-fill"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-card">
-                        <div class="card-icon">🌏</div>
-                        <h3>Fun Facts</h3>
-                        <ul class="fun-facts">
-                            <li>🇭🇷 Explored Croatia's coastline</li>
-                            <li>⚽ Attended 2018 FIFA World Cup in Russia</li>
-                            <li>🏜️ Conquered the Moroccan desert</li>
-                            <li>🇩🇪 Stood at Brandenburg Gate</li>
-                            <li>⚽ Plays social soccer (midfielder energy)</li>
-                        </ul>
+                    <div class="dancing-banana-container">
+                        <span class="dancing-banana">🍌</span>
+                        <span class="dancing-banana">🍌</span>
+                        <span class="dancing-banana">🍌</span>
+                        <span class="dancing-banana">🍌</span>
+                        <span class="dancing-banana">🍌</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-accent">Career</span>
-                <span class="title-main">Journey</span>
-            </h2>
-            
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker current"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior Business Analyst</h3>
-                            <span class="company">Urban Utilities</span>
-                            <span class="date">Jan 2024 - Present</span>
-                            <span class="location">📍 Brisbane, Queensland</span>
-                        </div>
-                        <p>Making sure Brisbane's water keeps flowing while I keep flowing with Eels banter at the office.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Hybrid</span>
-                            <span class="tag">Full-time</span>
-                        </div>
+            <!-- Simpsons Section -->
+            <section class="content-section simpsons-section">
+                <h2 class="section-title blink">
+                    🍩 MY FAV SIMPSONS MOMENTS!!! 🍩
+                </h2>
+                <div class="simpsons-gallery">
+                    <div class="simpsons-gif">
+                        <div class="gif-placeholder homer-dance">🍩 HOMER DANCING 🍩</div>
+                        <p>me after the eels win (rare)</p>
+                    </div>
+                    <div class="simpsons-gif">
+                        <div class="gif-placeholder bart-skateboard">🛹 BART SKATING 🛹</div>
+                        <p>me going 2 work on monday</p>
+                    </div>
+                    <div class="simpsons-gif">
+                        <div class="gif-placeholder ralph-picking">👃 RALPH MOMENT 👃</div>
+                        <p>me during boring meetings lol</p>
+                    </div>
+                    <div class="simpsons-gif">
+                        <div class="gif-placeholder nelson-haha">😂 HA HA! 😂</div>
+                        <p>me 2 panthers fans</p>
                     </div>
                 </div>
-                
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior Business Analyst</h3>
-                            <span class="company">Toll Global Express</span>
-                            <span class="date">Jan 2022 - Jan 2024</span>
-                            <span class="location">📍 Brisbane, Queensland</span>
-                        </div>
-                        <p>Delivered packages of business insights faster than Toll delivers your parcels. Allegedly.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">2 years</span>
-                            <span class="tag">Full-time</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Regional Finance Operations BA (APAC)</h3>
-                            <span class="company">Chubb</span>
-                            <span class="date">Nov 2019 - Jan 2022</span>
-                            <span class="location">📍 Sydney, NSW</span>
-                        </div>
-                        <p>Covered the whole APAC region. That's a lot of time zones and a lot of early morning calls.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">2+ years</span>
-                            <span class="tag">APAC</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Commercial Finance Analyst</h3>
-                            <span class="company">Maxwell Food Products</span>
-                            <span class="date">Feb 2019 - Nov 2019</span>
-                            <span class="location">📍 Sydney, Australia</span>
-                        </div>
-                        <p>South East Asia Team. Crunched numbers and probably ate my weight in product samples.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">10 months</span>
-                            <span class="tag">SEA Team</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Accounting Associate</h3>
-                            <span class="company">Robertson Thorne</span>
-                            <span class="date">Feb 2016 - Apr 2018</span>
-                            <span class="location">📍 Sydney, Australia</span>
-                        </div>
-                        <p>Where it all began. Learning the ropes and realising debits go on the left.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">2+ years</span>
-                            <span class="tag">Full-time</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Sports Section -->
-    <section class="sports" id="sports">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-accent">Sports</span>
-                <span class="title-main">Corner</span>
-            </h2>
-            
-            <div class="sports-intro">
-                <p>Fair dinkum, if you're not into sport, are you even Australian? Here's where I stand on the important issues.</p>
-            </div>
-            
-            <!-- Interactive Sports Picker -->
-            <div class="sports-picker">
-                <button class="sport-tab active" data-sport="nrl">🏉 NRL</button>
-                <button class="sport-tab" data-sport="cricket">🏏 Cricket</button>
-                <button class="sport-tab" data-sport="soccer">⚽ Soccer</button>
-                <button class="sport-tab" data-sport="origin">💙 Origin</button>
-            </div>
-            
-            <div class="sports-content">
-                <!-- NRL Content -->
-                <div class="sport-panel active" id="nrl">
-                    <div class="sport-hero eels-theme">
-                        <div class="sport-hero-content">
-                            <div class="team-badge eels">
-                                <span class="badge-icon">⚡</span>
-                            </div>
-                            <h3>Parramatta Eels</h3>
-                            <p class="team-slogan">"Next year is our year" - Me, every year since 1986</p>
-                        </div>
+            <!-- Guestbook Section -->
+            <section class="content-section guestbook-section" id="guestbook">
+                <h2 class="section-title">
+                    📝 SIGN MY GUESTBOOK!!! 📝
+                </h2>
+                <div class="guestbook-entries">
+                    <div class="guestbook-entry">
+                        <p class="entry-author">~*SuNsHiNe*~ wrote:</p>
+                        <p class="entry-text">OMG ur site is sooo cool!!! luv the colors!! keep it up!! xoxo</p>
+                        <p class="entry-date">Posted: 03/15/2003</p>
                     </div>
-                    <div class="sport-details">
-                        <div class="banter-card">
-                            <h4>🏆 Premiership Count</h4>
-                            <p class="big-number">4</p>
-                            <p class="small-text">Last one: 1986. But who's counting? (I am. Every day.)</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>💔 Heartbreak Level</h4>
-                            <div class="heartbreak-meter">
-                                <div class="meter-fill" style="width: 95%"></div>
-                            </div>
-                            <p class="small-text">2022 Grand Final? Never heard of it.</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>🗣️ Hot Takes</h4>
-                            <ul class="hot-takes">
-                                <li>Mitchell Moses is underrated</li>
-                                <li>We should've kept Jarryd Hayne</li>
-                                <li>The refs hate us (this is a fact)</li>
-                                <li>Clint Gutherson is captain material</li>
-                            </ul>
-                        </div>
+                    <div class="guestbook-entry">
+                        <p class="entry-author">xX_DarkAngel_Xx wrote:</p>
+                        <p class="entry-text">nice site dude... check out mine 2!! we should trade links!!</p>
+                        <p class="entry-date">Posted: 02/28/2003</p>
                     </div>
-                    <div class="rivalry-section">
-                        <h4>Rivalry Rankings</h4>
-                        <div class="rivalry-list">
-                            <div class="rivalry-item">
-                                <span class="rival-name">Panthers</span>
-                                <div class="hate-meter"><div class="hate-fill" style="width: 100%"></div></div>
-                                <span class="hate-label">Pure hatred</span>
-                            </div>
-                            <div class="rivalry-item">
-                                <span class="rival-name">Storm</span>
-                                <div class="hate-meter"><div class="hate-fill" style="width: 85%"></div></div>
-                                <span class="hate-label">Intense dislike</span>
-                            </div>
-                            <div class="rivalry-item">
-                                <span class="rival-name">Roosters</span>
-                                <div class="hate-meter"><div class="hate-fill" style="width: 75%"></div></div>
-                                <span class="hate-label">Strong dislike</span>
-                            </div>
-                        </div>
+                    <div class="guestbook-entry">
+                        <p class="entry-author">Anonymous wrote:</p>
+                        <p class="entry-text">a/s/l? 😏</p>
+                        <p class="entry-date">Posted: 01/05/2003</p>
                     </div>
                 </div>
-                
-                <!-- Cricket Content -->
-                <div class="sport-panel" id="cricket">
-                    <div class="sport-hero cricket-theme">
-                        <div class="sport-hero-content">
-                            <div class="team-badge cricket">
-                                <span class="badge-icon">🏏</span>
-                            </div>
-                            <h3>Australian Cricket</h3>
-                            <p class="team-slogan">Nothing beats a summer of cricket and cold bevvies</p>
-                        </div>
-                    </div>
-                    <div class="sport-details">
-                        <div class="banter-card">
-                            <h4>🏟️ Favourite Ground</h4>
-                            <p class="big-text">The SCG</p>
-                            <p class="small-text">Pink Test is always emotional</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>📺 Viewing Style</h4>
-                            <ul class="cricket-habits">
-                                <li>✅ Day 5 specialist (only watch when it gets spicy)</li>
-                                <li>✅ BBL enthusiast</li>
-                                <li>✅ Armchair selector</li>
-                                <li>✅ "I could've played if not for my knee"</li>
-                            </ul>
-                        </div>
-                        <div class="banter-card">
-                            <h4>🎯 Ashes Confidence</h4>
-                            <div class="confidence-meter">
-                                <div class="meter-fill" style="width: 80%"></div>
-                            </div>
-                            <p class="small-text">We're winning the Ashes. Always.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Soccer Content -->
-                <div class="sport-panel" id="soccer">
-                    <div class="sport-hero soccer-theme">
-                        <div class="sport-hero-content">
-                            <div class="team-badge soccer">
-                                <span class="badge-icon">⚽</span>
-                            </div>
-                            <h3>The Beautiful Game</h3>
-                            <p class="team-slogan">Attended the 2018 World Cup in Russia 🇷🇺</p>
-                        </div>
-                    </div>
-                    <div class="sport-details">
-                        <div class="banter-card wide">
-                            <h4>🏃 Playing Career</h4>
-                            <p>Social soccer warrior. Midfielder by trade. Yellow cards by nature.</p>
-                            <p class="small-text">Peak performance: That one goal in 2019 that I still talk about.</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>🌍 World Cup 2018</h4>
-                            <p class="big-text">🇷🇺 Russia</p>
-                            <p class="small-text">Watched the Socceroos live. We were robbed.</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>🇦🇺 Socceroos</h4>
-                            <div class="socceroos-support">
-                                <span class="support-level">DIEHARD</span>
-                            </div>
-                            <p class="small-text">We're winning the World Cup eventually. It's coming home (to Australia).</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Origin Content -->
-                <div class="sport-panel" id="origin">
-                    <div class="sport-hero origin-theme">
-                        <div class="sport-hero-content">
-                            <div class="team-badge origin">
-                                <span class="badge-icon">💙</span>
-                            </div>
-                            <h3>State of Origin</h3>
-                            <p class="team-slogan">UP THE BLUES! 🔵</p>
-                        </div>
-                    </div>
-                    <div class="sport-details">
-                        <div class="banter-card">
-                            <h4>🏠 Allegiance</h4>
-                            <p class="big-text blues">NSW BLUES</p>
-                            <p class="small-text">Born in NSW, bleed blue forever</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>🤬 QLD Banter Level</h4>
-                            <div class="banter-meter">
-                                <div class="meter-fill maroon" style="width: 100%"></div>
-                            </div>
-                            <p class="small-text">Living in Brisbane makes it even spicier 🌶️</p>
-                        </div>
-                        <div class="banter-card">
-                            <h4>📣 Origin Traditions</h4>
-                            <ul class="origin-traditions">
-                                <li>🍺 Cold ones with the boys</li>
-                                <li>📱 Group chat going off</li>
-                                <li>🗣️ Yelling at the TV</li>
-                                <li>😤 Blaming the refs</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Fun Interactive Quiz -->
-            <div class="quiz-section">
-                <h3>🎮 Quick Quiz: Are You a True Blue Eels Fan?</h3>
-                <div class="quiz-container" id="quiz">
-                    <div class="quiz-question active" data-question="1">
-                        <p>What year did the Eels last win the premiership?</p>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-correct="true">1986</button>
-                            <button class="quiz-option">2001</button>
-                            <button class="quiz-option">2009</button>
-                            <button class="quiz-option">Never (feels like it)</button>
-                        </div>
-                    </div>
-                    <div class="quiz-question" data-question="2">
-                        <p>What's the Eels' home ground called?</p>
-                        <div class="quiz-options">
-                            <button class="quiz-option">Accor Stadium</button>
-                            <button class="quiz-option" data-correct="true">CommBank Stadium</button>
-                            <button class="quiz-option">Parramatta Stadium</button>
-                            <button class="quiz-option">The House of Pain</button>
-                        </div>
-                    </div>
-                    <div class="quiz-question" data-question="3">
-                        <p>What's the Eels mascot?</p>
-                        <div class="quiz-options">
-                            <button class="quiz-option">A literal eel</button>
-                            <button class="quiz-option" data-correct="true">An electric eel character</button>
-                            <button class="quiz-option">A sad fan</button>
-                            <button class="quiz-option">Hope (extinct)</button>
-                        </div>
-                    </div>
-                    <div class="quiz-result" id="quizResult">
-                        <div class="result-content">
-                            <span class="result-emoji">🏆</span>
-                            <h4>True Blue!</h4>
-                            <p>You know your Eels! Welcome to the pain train.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <form class="guestbook-form" onsubmit="submitGuestbook(event)">
+                    <input type="text" placeholder="Your Name (or cool nickname)" id="guestName">
+                    <textarea placeholder="Leave a message! Be nice pls!" id="guestMessage"></textarea>
+                    <button type="submit" class="submit-btn">
+                        <span class="blink">★</span> SIGN IT! <span class="blink">★</span>
+                    </button>
+                </form>
+            </section>
 
-    <!-- Adventures Section -->
-    <section class="adventures" id="adventures">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-accent">Travel</span>
-                <span class="title-main">Adventures</span>
-            </h2>
-            
-            <div class="adventures-intro">
-                <p>When I'm not watching the Eels lose, I'm exploring the world. Here are some highlights:</p>
-            </div>
-            
-            <div class="adventure-grid">
-                <div class="adventure-card" data-tilt>
-                    <div class="adventure-icon">🇭🇷</div>
-                    <h3>Croatia</h3>
-                    <p>Island hopping, clear waters, and enough seafood to sink a ship.</p>
-                    <span class="adventure-tag">Coastal Vibes</span>
+            <!-- Web Ring Section -->
+            <section class="content-section" id="webrings">
+                <h2 class="section-title">🔗 WEB RINGS I'M IN 🔗</h2>
+                <div class="webring-container">
+                    <div class="webring">
+                        <p>[ <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a> ]</p>
+                        <p class="webring-name">~*~ Australian Sports Fans Ring ~*~</p>
+                    </div>
+                    <div class="webring">
+                        <p>[ <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a> ]</p>
+                        <p class="webring-name">~*~ Cool Dudes of the Internet ~*~</p>
+                    </div>
+                    <div class="webring">
+                        <p>[ <a href="#">&lt;&lt; Prev</a> | <a href="#">Random</a> | <a href="#">Next &gt;&gt;</a> ]</p>
+                        <p class="webring-name">~*~ Eels Fans Unite Ring ~*~</p>
+                    </div>
                 </div>
-                
-                <div class="adventure-card" data-tilt>
-                    <div class="adventure-icon">🇷🇺</div>
-                    <h3>Russia World Cup</h3>
-                    <p>2018. The Socceroos. The atmosphere. The vodka.</p>
-                    <span class="adventure-tag">Football Pilgrimage</span>
-                </div>
-                
-                <div class="adventure-card" data-tilt>
-                    <div class="adventure-icon">🇲🇦</div>
-                    <h3>Morocco</h3>
-                    <p>Desert adventures, camel rides, and sleeping under the stars.</p>
-                    <span class="adventure-tag">Desert Explorer</span>
-                </div>
-                
-                <div class="adventure-card" data-tilt>
-                    <div class="adventure-icon">🇩🇪</div>
-                    <h3>Germany</h3>
-                    <p>Brandenburg Gate, beer gardens, and efficient public transport.</p>
-                    <span class="adventure-tag">Culture Trip</span>
-                </div>
-            </div>
-            
-            <div class="travel-stats">
-                <div class="travel-stat">
-                    <span class="travel-number" data-count="15">0</span>
-                    <span class="travel-label">Countries Visited</span>
-                </div>
-                <div class="travel-stat">
-                    <span class="travel-number" data-count="1">0</span>
-                    <span class="travel-label">World Cup Attended</span>
-                </div>
-                <div class="travel-stat">
-                    <span class="travel-number" data-count="100">0</span>
-                    <span class="travel-label">% Wanderlust</span>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title light">
-                <span class="title-accent">Get In</span>
-                <span class="title-main">Touch</span>
-            </h2>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p class="contact-intro">
-                        Want to chat about business analysis, the Eels' finals chances (lol), 
-                        or just have a yarn? Hit me up!
-                    </p>
-                    
-                    <div class="contact-methods">
-                        <a href="https://www.linkedin.com/in/jordanvaz/" target="_blank" class="contact-method">
-                            <span class="contact-icon">💼</span>
-                            <span class="contact-label">LinkedIn</span>
-                        </a>
-                        <a href="https://www.instagram.com/jordan.vaz_/" target="_blank" class="contact-method">
-                            <span class="contact-icon">📸</span>
-                            <span class="contact-label">Instagram</span>
-                        </a>
+            <!-- Awards Section -->
+            <section class="content-section" id="awards">
+                <h2 class="section-title">🏆 AWARDS I WON!!! 🏆</h2>
+                <div class="awards-container">
+                    <div class="award">
+                        <div class="award-badge">🥇</div>
+                        <p>COOL SITE AWARD</p>
+                        <p class="award-date">Awarded: 2003</p>
                     </div>
-                    
-                    <div class="contact-cta">
-                        <p>Based in <strong>Brisbane, Queensland</strong> 🌴</p>
-                        <p class="contact-note">Always up for a coffee and a chat about why the Eels will definitely win next year.</p>
+                    <div class="award">
+                        <div class="award-badge">⭐</div>
+                        <p>BEST HOMEPAGE</p>
+                        <p class="award-date">Awarded: 2002</p>
+                    </div>
+                    <div class="award">
+                        <div class="award-badge">🌟</div>
+                        <p>5 STAR SITE</p>
+                        <p class="award-date">Awarded: 2001</p>
                     </div>
                 </div>
-                
-                <div class="contact-fun">
-                    <div class="random-fact-generator">
-                        <h3>🎲 Random Jordan Fact</h3>
-                        <p id="randomFact">Click the button for a random fact!</p>
-                        <button class="btn btn-primary" id="factBtn">Generate Fact</button>
+            </section>
+
+            <!-- Interactive Games Section -->
+            <section class="content-section games-section">
+                <h2 class="section-title blink">🎮 PLAY GAMES!!! 🎮</h2>
+                <div class="games-container">
+                    <div class="game-box">
+                        <h3>Click the Eel!</h3>
+                        <div class="click-game" id="clickGame">
+                            <div class="eel-target" id="eelTarget">⚡🐟</div>
+                        </div>
+                        <p>Score: <span id="clickScore">0</span></p>
+                        <button onclick="resetClickGame()">RESET</button>
+                    </div>
+                    <div class="game-box">
+                        <h3>Magic 8 Ball</h3>
+                        <div class="magic-8ball" id="magic8ball" onclick="shake8Ball()">
+                            <div class="ball-window">
+                                <span id="ballAnswer">ASK ME!</span>
+                            </div>
+                        </div>
+                        <p>Click to ask a question!</p>
+                    </div>
+                    <div class="game-box">
+                        <h3>Mood Ring 💍</h3>
+                        <div class="mood-ring" id="moodRing" onclick="changeMood()">
+                            <div class="ring-gem"></div>
+                        </div>
+                        <p id="moodText">Click to check your mood!</p>
                     </div>
                 </div>
+            </section>
+
+            <!-- Photo Album Section -->
+            <section class="content-section" id="photos">
+                <h2 class="section-title">📸 MY PHOTO ALBUM 📸</h2>
+                <div class="photo-album">
+                    <div class="photo-frame" onclick="enlargePhoto(this)">
+                        <div class="photo-placeholder">🇭🇷 Croatia Trip</div>
+                        <p>me in croatia!! so beautiful!!</p>
+                    </div>
+                    <div class="photo-frame" onclick="enlargePhoto(this)">
+                        <div class="photo-placeholder">⚽ World Cup 2018</div>
+                        <p>russia world cup!! GO SOCCEROOS!!</p>
+                    </div>
+                    <div class="photo-frame" onclick="enlargePhoto(this)">
+                        <div class="photo-placeholder">🏜️ Morocco</div>
+                        <p>riding camels in morocco!!</p>
+                    </div>
+                    <div class="photo-frame" onclick="enlargePhoto(this)">
+                        <div class="photo-placeholder">🇩🇪 Germany</div>
+                        <p>brandenburg gate!! so cool!!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Popup Ads Container -->
+    <div id="popupContainer"></div>
+
+    <!-- Welcome Popup -->
+    <div class="welcome-popup" id="welcomePopup">
+        <div class="popup-content welcome-content">
+            <h2>🎉 WELCOME TO MY SITE!!! 🎉</h2>
+            <div class="dancing-text">
+                <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span><span>!</span>
+            </div>
+            <p>You are visitor #<span id="welcomeVisitorNum">42069</span>!</p>
+            <p>Would you like to enable AWESOME MODE?</p>
+            <div class="popup-buttons">
+                <button onclick="enableAwesomeMode()">YES! 🎸</button>
+                <button onclick="closeWelcome()">No thanks 😢</button>
+            </div>
+            <p class="small-text">(Click anywhere to close)</p>
+        </div>
+    </div>
+
+    <!-- Age Verification Popup (Parody) -->
+    <div class="age-popup" id="agePopup" style="display: none;">
+        <div class="popup-content age-content">
+            <h2>⚠️ AGE VERIFICATION ⚠️</h2>
+            <p>Are you old enough to handle EXTREME Parramatta Eels content?</p>
+            <p class="small-text">(Warning: May contain heartbreak and disappointment)</p>
+            <div class="popup-buttons">
+                <button onclick="verifyAge(true)">YES I'm ready for pain</button>
+                <button onclick="verifyAge(false)">No take me somewhere safe</button>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">
-                    Made with 💙💛 by Jordan Vaz | © 2024 | Go the Eels! ⚡
-                </p>
-                <p class="footer-disclaimer">
-                    Disclaimer: The Eels will definitely win the premiership next year. Trust me bro.
-                </p>
-            </div>
+    <footer class="retro-footer">
+        <div class="footer-gifs">
+            <span class="footer-emoji">🏉</span>
+            <span class="footer-emoji">⚽</span>
+            <span class="footer-emoji">🏏</span>
+            <span class="footer-emoji">⚡</span>
         </div>
+        <p>© 2003 Jordan Vaz - All Rights Reserved</p>
+        <p>Made with 💖 in Netscape Composer</p>
+        <div class="browser-badges">
+            <div class="badge">Best viewed in<br>800x600</div>
+            <div class="badge">Netscape<br>NOW!</div>
+            <div class="badge">Made with<br>Notepad</div>
+            <div class="badge">NO<br>FRAMES!</div>
+        </div>
+        <marquee class="footer-marquee" scrollamount="2">
+            Thanks 4 visiting!!! Come back soon!!! Don't forget to sign my guestbook!!! GO EELS!!! ⚡⚡⚡
+        </marquee>
+        <p class="email-link">
+            📧 Email me at: <a href="mailto:jordan@coolsite.com" class="blink">jordan@coolsite.com</a>
+        </p>
+        <p class="last-updated">
+            Last Updated: <span class="blink">TODAY!</span> (I update daily lol jk)
+        </p>
     </footer>
 
-    <!-- Easter Egg: Konami Code -->
-    <div class="easter-egg" id="easterEgg">
-        <div class="easter-egg-content">
-            <h2>🎉 You found the secret! 🎉</h2>
-            <p>You're a true legend. Here's a virtual meat pie. 🥧</p>
-            <button class="btn btn-primary" id="closeEasterEgg">Cheers mate!</button>
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-item" id="floatingEel">⚡🐟</div>
+        <div class="floating-item" id="floatingBall">🏉</div>
+        <div class="floating-item" id="floatingStar">⭐</div>
+    </div>
+
+    <!-- Bonzi Buddy Parody -->
+    <div class="bonzi-buddy" id="bonziBuddy">
+        <div class="bonzi-character">🦍</div>
+        <div class="bonzi-speech" id="bonziSpeech">
+            <p>Hi! I'm Bonzi! Click me for fun facts!</p>
+            <button onclick="closeBonzi()">X</button>
+        </div>
+    </div>
+
+    <!-- "You've Won!" Fake Alert -->
+    <div class="winner-popup" id="winnerPopup" style="display: none;">
+        <div class="popup-content winner-content">
+            <h2 class="blink rainbow-text">🎊 CONGRATULATIONS!!! 🎊</h2>
+            <p>You are the 1,000,000th visitor!</p>
+            <p>You've won a FREE* trip to watch the Eels!</p>
+            <p class="small-text">*Terms and Whose Line Is It Anyway apply</p>
+            <button onclick="claimPrize()">CLAIM MY PRIZE!!!</button>
+            <button onclick="closeWinner()">No thanks, I hate winning</button>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
